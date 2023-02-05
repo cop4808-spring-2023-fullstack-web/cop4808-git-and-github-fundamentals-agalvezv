@@ -20,7 +20,9 @@ function updateDisplay() {
 }
   
 updateDisplay();
-
+/*This seems to be where all the onclick functionality starts up*/
+/*I'm add else if statements for every new piece of functionality.
+This includes new functions located at the bottom of the script */
 function clickButton() {
     for(let i = 0; i < buttons.length; i++) {
         buttons[i].addEventListener('click', function() {
@@ -28,6 +30,11 @@ function clickButton() {
                 inputOperand(buttons[i].value);
                 updateDisplay();
             } else if(buttons[i].classList.contains('operator')) {
+                inputOperator(buttons[i].value);
+                //modulus won't get its own function
+                //move to the inputOperator function
+                //this requires two numbers and I am using existing functionality
+            } else if(buttons[i].classList.contains('modulus')) {
                 inputOperator(buttons[i].value);
             } else if(buttons[i].classList.contains('equals')) {
                 inputEquals();
@@ -43,6 +50,12 @@ function clickButton() {
                 updateDisplay();
             } else if(buttons[i].classList.contains('squareroot')) {
                 squareRoot(displayValue);
+                updateDisplay();
+            } else if(buttons[i].classList.contains('power')) {
+                powerUp(displayValue);
+                updateDisplay();
+            } else if(buttons[i].classList.contains('factorial')) {
+                factorialUp(displayValue);
                 updateDisplay();
             } else if(buttons[i].classList.contains('clear'))
                 clearDisplay();
@@ -179,6 +192,10 @@ function operate(x, y, op) {
         } else {
         return x / y;
         }
+    } else if(op === 'mod')
+    {
+        //This is a simple way of determining mod
+        return x % y;
     }
 }
 
@@ -186,6 +203,7 @@ function roundAccurately(num, places) {
     return parseFloat(Math.round(num + 'e' + places) + 'e-' + places);
 }
 
+//squareRoot just uses sqrt functionality already in Math
 function squareRoot(num)
 {
     displayValue = Math.sqrt(num);
@@ -193,3 +211,30 @@ function squareRoot(num)
     return displayValue;
 
 }
+
+//powerUp multiplies the number by itself
+
+function powerUp(num)
+{
+    displayValue = num*num;
+
+    return displayValue;
+
+}
+//this is for factorial
+function factorialUp(num) {
+    //The while loop operates while the number slowly decrements and multiplies by what is there
+    
+    displayValue = num;
+    if (num === 0 || num === 1)
+    {
+        return 1;
+    }  
+    while (num > 1) { 
+      num--;
+      displayValue *= num;
+    }
+    return displayValue;
+  }
+
+
