@@ -9,6 +9,8 @@
 
 <img src="https://media.giphy.com/media/M15dhSqRmzvvgMEwr5/giphy.gif" alt="Site">
 
+<img src="https://media.giphy.com/media/NEfvGPXiTt9WELnmNB/giphy.gif" alt="Calculator" width="500" height="1000">
+
 
 
 
