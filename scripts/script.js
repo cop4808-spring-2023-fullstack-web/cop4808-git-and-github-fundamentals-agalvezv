@@ -194,8 +194,10 @@ function operate(x, y, op) {
         }
     } else if(op === 'mod')
     {
+        let z = null;
+        z = modUp(x,y);
         //This is a simple way of determining mod
-        return x % y;
+        return z;
     }
 }
 
@@ -203,6 +205,7 @@ function roundAccurately(num, places) {
     return parseFloat(Math.round(num + 'e' + places) + 'e-' + places);
 }
 
+//All functions turn displayValue to string to use updatedisplay function to keep things within screen.
 //squareRoot just uses sqrt functionality already in Math
 function squareRoot(num)
 {
@@ -235,6 +238,14 @@ function factorialUp(num) {
 
     displayValue = displayValue.toString();
 
+  }
+
+  function modUp(x,y) {
+    let temp = null;
+
+    temp = x % y;
+
+    return temp;
   }
 /*
   function fixDigits(num) {

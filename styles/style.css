@@ -113,33 +113,89 @@ button {
 /* CSS for new buttons
 Each is named after their functionality */
 .power {
+    margin: 1px;
+    border-radius: 5%;
+    border: none;
+    font-weight: bold;
+    font-size: 2em;
+    font-family: monospace;
+    color: black;
     background-color: #FF2400;
 }
 
 .power:active {
+    margin: 1px;
+    border-radius: 5%;
+    border: none;
+    font-weight: bold;
+    font-size: 2em;
+    font-family: monospace;
+    color: black;
     background-color: #FA8072;
 }
 
 .factorial {
+    margin: 1px;
+    border-radius: 5%;
+    border: none;
+    font-weight: bold;
+    font-size: 2em;
+    font-family: monospace;
+    color: black;
     background-color: #FF2400;
 }
 
 .factorial:active {
+    margin: 1px;
+    border-radius: 5%;
+    border: none;
+    font-weight: bold;
+    font-size: 2em;
+    font-family: monospace;
+    color: black;
     background-color: #FA8072;
 }
 
 .squareroot {
+    margin: 1px;
+    border-radius: 5%;
+    border: none;
+    font-weight: bold;
+    font-size: 2em;
+    font-family: monospace;
+    color: black;
     background-color: #FF2400;
 }
 
 .squareroot:active {
+    margin: 1px;
+    border-radius: 5%;
+    border: none;
+    font-weight: bold;
+    font-size: 2em;
+    font-family: monospace;
+    color: black;
     background-color: #FA8072;
 }
 
 .modulus{
+    margin: 1px;
+    border-radius: 5%;
+    border: none;
+    font-weight: bold;
+    font-size: 2em;
+    font-family: monospace;
+    color: black;
     background-color: #FF2400;
 }
 
 .modulus:active {
+    margin: 1px;
+    border-radius: 5%;
+    border: none;
+    font-weight: bold;
+    font-size: 2em;
+    font-family: monospace;
+    color: black;
     background-color: #FA8072;
 }
