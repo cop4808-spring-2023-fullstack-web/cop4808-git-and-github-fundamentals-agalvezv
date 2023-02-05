@@ -41,6 +41,9 @@ function clickButton() {
             } else if(buttons[i].classList.contains('sign')) {
                 inputSign(displayValue);
                 updateDisplay();
+            } else if(buttons[i].classList.contains('squareroot')) {
+                squareRoot(displayValue);
+                updateDisplay();
             } else if(buttons[i].classList.contains('clear'))
                 clearDisplay();
                 updateDisplay();
@@ -181,4 +184,12 @@ function operate(x, y, op) {
 
 function roundAccurately(num, places) {
     return parseFloat(Math.round(num + 'e' + places) + 'e-' + places);
+}
+
+function squareRoot(num)
+{
+    displayValue = Math.sqrt(num);
+
+    return displayValue;
+
 }
