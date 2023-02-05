@@ -20,7 +20,7 @@ html {
     border-radius: 4px;
     display: grid;
     grid-template-columns: repeat(4, 100px);
-    grid-template-rows: minmax(100px, auto) repeat(5, 80px);
+    grid-template-rows: minmax(100px, auto) repeat(6, 80px);
     gap: 2px;
 }
 
@@ -107,4 +107,38 @@ button {
 
 .percent:active {
     background-color: rgb(123, 189, 255);
+}
+
+
+/* CSS for new buttons */
+.power {
+    background-color: #FF2400;
+}
+
+.power:active {
+    background-color: #FA8072;
+}
+
+.factorial {
+    background-color: #FF2400;
+}
+
+.factorial:active {
+    background-color: #FA8072;
+}
+
+.squareroot {
+    background-color: #FF2400;
+}
+
+.squareroot:active {
+    background-color: #FA8072;
+}
+
+.modulus{
+    background-color: #FF2400;
+}
+
+.modulus:active {
+    background-color: #FA8072;
 }
