@@ -206,9 +206,8 @@ function roundAccurately(num, places) {
 //squareRoot just uses sqrt functionality already in Math
 function squareRoot(num)
 {
-    displayValue = Math.sqrt(num);
+    displayValue = Math.sqrt(num).toString();
 
-    return displayValue;
 
 }
 
@@ -216,9 +215,8 @@ function squareRoot(num)
 
 function powerUp(num)
 {
-    displayValue = num*num;
 
-    return displayValue;
+    displayValue = (num*num).toString();
 
 }
 //this is for factorial
@@ -234,7 +232,24 @@ function factorialUp(num) {
       num--;
       displayValue *= num;
     }
+
+    displayValue = displayValue.toString();
+
+  }
+/*
+  function fixDigits(num) {
+
+    
+    displayValue = num;
+
+    if( displayValue.length>9)
+    {
+
+
+    }
+
     return displayValue;
   }
+  */
 
 

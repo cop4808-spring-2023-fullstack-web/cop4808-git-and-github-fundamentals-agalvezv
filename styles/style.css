@@ -110,7 +110,8 @@ button {
 }
 
 
-/* CSS for new buttons */
+/* CSS for new buttons
+Each is named after their functionality */
 .power {
     background-color: #FF2400;
 }
