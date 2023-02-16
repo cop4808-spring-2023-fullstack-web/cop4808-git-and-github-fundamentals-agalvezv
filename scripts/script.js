@@ -7,8 +7,18 @@ let result = null;
 const buttons = document.querySelectorAll('button');
 
 window.addEventListener('keydown', function(e){
-    const key = document.querySelector(`button[data-key='${e.keyCode}']`);
-    key.click();
+    const key = document.querySelector(`button[data-key='${e.key}']`);
+    
+    try
+    {
+        key.click();
+    }
+    catch (error)
+    {
+        console.log("Catch error: ", error);
+        this.document.getElementById("errorcheck").innerHTML = "That key is not allowed.";
+        
+    }
 });
 
 function updateDisplay() {
@@ -31,9 +41,9 @@ function clickButton() {
                 updateDisplay();
             } else if(buttons[i].classList.contains('operator')) {
                 inputOperator(buttons[i].value);
-                //modulus won't get its own function
-                //move to the inputOperator function
-                //this requires two numbers and I am using existing functionality
+                // modulus won't get its own function
+                // move to the inputOperator function
+                // this requires two numbers and I am using existing functionality
             } else if(buttons[i].classList.contains('modulus')) {
                 inputOperator(buttons[i].value);
             } else if(buttons[i].classList.contains('equals')) {
